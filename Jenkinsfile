@@ -7,20 +7,28 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'hello build'
+        echo 'hello build one'
+        sleep(10)
+        echo 'hello build two'
+        echo 'hello build three'
       }
     }
 
     stage('Test') {
       steps {
-        echo 'hello test'
-        sh('error')
+        echo 'hello test one'
+        sleep(10)
+        echo 'hello test two'
+        echo 'hello test three'
       }
     }
 
     stage('Deploy') {
       steps {
-        echo 'hello deploy'
+        echo 'hello deploy one'
+        sleep(10)
+        echo 'hello deploy two'
+        echo 'hello deploy three'
       }
     }
   }
